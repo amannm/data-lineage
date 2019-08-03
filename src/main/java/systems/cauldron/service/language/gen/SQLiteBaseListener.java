@@ -934,6 +934,24 @@ public class SQLiteBaseListener implements SQLiteListener {
      * <p>The default implementation does nothing.</p>
      */
     @Override
+    public void enterTable_reference(SQLiteParser.Table_referenceContext ctx) {
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override
+    public void exitTable_reference(SQLiteParser.Table_referenceContext ctx) {
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * <p>The default implementation does nothing.</p>
+     */
+    @Override
     public void enterJoin_clause(SQLiteParser.Join_clauseContext ctx) {
     }
 
