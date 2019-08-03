@@ -1,11 +1,12 @@
-package systems.cauldron.service.language;
+package systems.cauldron.service.datalineage;
 
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CodePointCharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import systems.cauldron.service.language.gen.SQLiteLexer;
-import systems.cauldron.service.language.gen.SQLiteParser;
+import systems.cauldron.service.datalineage.gen.SQLiteLexer;
+import systems.cauldron.service.datalineage.gen.SQLiteParser;
+import systems.cauldron.service.datalineage.parsing.TableDependencyListener;
 
 import java.util.Set;
 

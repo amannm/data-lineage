@@ -1,4 +1,4 @@
-package systems.cauldron.service.language;
+package systems.cauldron.service.datalineage;
 
 import org.junit.jupiter.api.Test;
 

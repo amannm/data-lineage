@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'antlr'
 }
 
 group 'systems.cauldron'
@@ -27,7 +26,7 @@ test {
 }
 
 compileJava {
-    inputs.property("moduleName", 'systems.cauldron.service.language')
+    inputs.property("moduleName", 'systems.cauldron.service.datalineage')
     doFirst {
         options.compilerArgs = [
                 '--module-path', classpath.asPath,
@@ -40,7 +39,7 @@ jar {
     archiveFileName = 'app.jar'
     manifest {
         attributes (
-                'Main-Class': 'systems.cauldron.service.language.Main',
+                'Main-Class': 'systems.cauldron.service.datalineage.Main',
                 'Class-Path': configurations.runtime.files.collect { "libs/$it.name" }.join(' ')
         )
     }

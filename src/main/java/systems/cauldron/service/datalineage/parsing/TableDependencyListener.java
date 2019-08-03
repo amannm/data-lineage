@@ -1,7 +1,8 @@
-package systems.cauldron.service.language;
+package systems.cauldron.service.datalineage.parsing;
 
-import systems.cauldron.service.language.gen.SQLiteBaseListener;
-import systems.cauldron.service.language.gen.SQLiteParser;
+import systems.cauldron.service.datalineage.TableReference;
+import systems.cauldron.service.datalineage.gen.SQLiteBaseListener;
+import systems.cauldron.service.datalineage.gen.SQLiteParser;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -36,6 +37,5 @@ public class TableDependencyListener extends SQLiteBaseListener {
     public Set<TableReference> getTableReferences() {
         return referenceList;
     }
-
 
 }

@@ -1,3 +1,3 @@
-# language
+# data lineage
 
-use ANTLR4 to extract table references from a SQLite input script
+* use ANTLR4 to extract table references from an SQLite input script

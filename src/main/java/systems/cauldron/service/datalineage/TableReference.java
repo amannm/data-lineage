@@ -1,11 +1,11 @@
-package systems.cauldron.service.language;
+package systems.cauldron.service.datalineage;
 
 import java.util.Objects;
 
 public class TableReference {
 
-    public final String databaseName;
-    public final String tableName;
+    private final String databaseName;
+    private final String tableName;
 
     public TableReference(String databaseName, String tableName) {
         this.databaseName = databaseName;
